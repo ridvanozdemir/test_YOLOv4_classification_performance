@@ -29,7 +29,7 @@ with open(class_list[0], 'r') as t:
         labels.append(urun)
 
 #path of images folder 
-parent_dir= "E:/2022/24_bidolu_leke_algilama/class_folders/"
+parent_dir= "enter_your_path/class_folders/"
 
 
 #create folders accodring to object name      
@@ -40,7 +40,6 @@ for directory in labels:
     
 
 folder = "input folder path"
-#file_path ="E:\\Ridvan_21\\03_depo_iade\\out"
 file_path_n ="output folder path"
 total_time = time.time()
 
@@ -183,8 +182,6 @@ for filename in glob.glob(os.path.join(folder, '*.jpg')):
             save_names_conf = filename[30:-4] + " " + labels[int(sinif)][:-1] + " " + label_c
             file_names.append(save_names_conf)        
         
-        #cv2.imwrite(file_path_n +"\\"+ dosya_adi, img)
-        #cv2.imwrite(os.path.join(file_path_n,filename),img)
         all_file.append(os.path.join(file_path_n,filename))
         parent_dir
         hedef_1_txt= os.path.join(parent_dir,labels[predicted_id][:-1])
